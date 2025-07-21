@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14dea2ae66e96da41b4ac292725f3d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidth: 7
-  gridHeight: 7
+  gridWidth: 4
+  gridHeight: 3
   initialShowTime: 3
   matchCheckDelay: 0.5
   cardGrid: {fileID: 663063620}
@@ -1549,8 +1549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 59.069, y: 0}
+  m_SizeDelta: {x: 1102.281, y: 944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &663063621
 MonoBehaviour:
@@ -1590,6 +1590,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spacing: 20
   cardSize: {x: 100, y: 140}
+  autoScaleCards: 1
+  minCardSize: {x: 60, y: 80}
+  maxCardSize: {x: 200, y: 280}
+  gridPadding: 40
   gridLayout: {fileID: 663063621}
 --- !u!1 &672252087
 GameObject:
@@ -2314,10 +2318,10 @@ RectTransform:
   m_Father: {fileID: 1991595326}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -641.0289, y: 347}
-  m_SizeDelta: {x: 481.9423, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 222.013, y: 347}
+  m_SizeDelta: {x: 358.2052, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1058397877
 GameObject:
@@ -3265,10 +3269,10 @@ RectTransform:
   m_Father: {fileID: 1991595326}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -641.0289, y: 397}
-  m_SizeDelta: {x: 481.9423, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 222.013, y: 397}
+  m_SizeDelta: {x: 358.2052, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1471832758
 CanvasRenderer:
@@ -4455,10 +4459,10 @@ RectTransform:
   m_Father: {fileID: 1991595326}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -641.0289, y: 447}
-  m_SizeDelta: {x: 481.9423, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 222.013, y: 447}
+  m_SizeDelta: {x: 358.2052, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2067696614
 CanvasRenderer:

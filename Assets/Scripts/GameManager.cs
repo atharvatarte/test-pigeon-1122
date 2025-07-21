@@ -80,6 +80,25 @@ public class GameManager : MonoBehaviour
             gameTime += Time.deltaTime;
             UpdateTimer();
         }
+        
+        // Check for screen size changes and update card scaling
+        CheckScreenSizeChange();
+    }
+    
+    private Vector2 lastScreenSize;
+    
+    private void CheckScreenSizeChange()
+    {
+        Vector2 currentScreenSize = new Vector2(Screen.width, Screen.height);
+        if (lastScreenSize != Vector2.zero && lastScreenSize != currentScreenSize)
+        {
+            // Screen size changed, update card scaling
+            if (cardGridComponent != null)
+            {
+                cardGridComponent.UpdateCardScaling();
+            }
+        }
+        lastScreenSize = currentScreenSize;
     }
     
     public void InitializeGame()
@@ -538,4 +557,12 @@ public class GameManager : MonoBehaviour
     public int GetGridWidth() => gridWidth;
     public int GetGridHeight() => gridHeight;
     public List<Card> GetCards() => cards;
+    
+    public void UpdateCardScaling()
+    {
+        if (cardGridComponent != null)
+        {
+            cardGridComponent.UpdateCardScaling();
+        }
+    }
 } 
