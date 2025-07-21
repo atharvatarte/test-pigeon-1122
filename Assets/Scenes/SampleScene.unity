@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14dea2ae66e96da41b4ac292725f3d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidth: 6
-  gridHeight: 5
+  gridWidth: 7
+  gridHeight: 7
   initialShowTime: 3
   matchCheckDelay: 0.5
   cardGrid: {fileID: 663063620}
@@ -2951,7 +2951,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1242446636
@@ -4124,14 +4124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efda6e9d4e9605244b66458a331d79a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
   sfxSource: {fileID: 0}
   cardFlipSound: {fileID: 8300000, guid: 5aaa4c7d5781546c6a13a9f1eb97b15b, type: 3}
   cardMatchSound: {fileID: 8300000, guid: 18e7a977900e54e27a8c431b34ffc659, type: 3}
   cardMismatchSound: {fileID: 8300000, guid: c6a04d2da9e71479b900f7381b720673, type: 3}
   gameWinSound: {fileID: 8300000, guid: 9d12098ed55364e7e80e277242e2c77e, type: 3}
-  backgroundMusic: {fileID: 8300000, guid: f646d488337c94084b47e56752970960, type: 3}
-  musicVolume: 0.5
   sfxVolume: 0.7
 --- !u!4 &1957066241
 Transform:

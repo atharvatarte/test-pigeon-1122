@@ -30,6 +30,7 @@ public class CardGrid : MonoBehaviour
             gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             
             // Use the higher number as constraint count for better layout
+            // This ensures proper layout even after grid dimension adjustments
             int constraintCount = Mathf.Max(gridWidth, gridHeight);
             gridLayout.constraintCount = constraintCount;
             

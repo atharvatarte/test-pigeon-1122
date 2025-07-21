@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     [Header("Game Settings")]
+    [Tooltip("Grid width - at least one dimension (width or height) must be even")]
     public int gridWidth = 4;
+    [Tooltip("Grid height - at least one dimension (width or height) must be even")]
     public int gridHeight = 4;
     public float initialShowTime = 3f;
     public float matchCheckDelay = 0.5f;
@@ -82,10 +84,32 @@ public class GameManager : MonoBehaviour
     
     public void InitializeGame()
     {
+        ValidateGridDimensions();
         ClearGrid();
         CreateCards();
         ArrangeCards();
         StartCoroutine(ShowCardsInitially());
+    }
+    
+    private void ValidateGridDimensions()
+    {
+        bool widthIsOdd = gridWidth % 2 != 0;
+        bool heightIsOdd = gridHeight % 2 != 0;
+        
+        if (widthIsOdd && heightIsOdd)
+        {
+            // Both are odd - increment the smaller dimension by 1
+            if (gridWidth <= gridHeight)
+            {
+                gridWidth++;
+                Debug.Log($"Grid validation: Both dimensions were odd. Incremented width to {gridWidth} to ensure at least one even dimension.");
+            }
+            else
+            {
+                gridHeight++;
+                Debug.Log($"Grid validation: Both dimensions were odd. Incremented height to {gridHeight} to ensure at least one even dimension.");
+            }
+        }
     }
     
     private void ClearGrid()
