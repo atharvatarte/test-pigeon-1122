@@ -188,7 +188,7 @@ public class UIManager : MonoBehaviour
     {
         // This would typically load a main menu scene
         // For now, just restart the game
-        GameManager.Instance.RestartGame();
+        GameManager.Instance.ShowMainMenu();
     }
     
     public void UpdateScore(int score)

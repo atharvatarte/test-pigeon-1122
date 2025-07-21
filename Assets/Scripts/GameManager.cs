@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -545,7 +546,12 @@ public class GameManager : MonoBehaviour
         
         InitializeGame();
     }
-    
+
+    public void ShowMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     // Getter methods for SaveSystem
     public int GetScore() => score;
     public int GetMoves() => moves;
